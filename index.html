@@ -118,22 +118,53 @@
             display: flex;
         }
 
-        /* Updated Header Styling */
-        .header-section { text-align: center; margin-top: 10px; margin-bottom: 25px; width: 95vw; max-width: 800px; }
-        .header-section h1 { font-size: var(--font-h1); margin: 0; color: #1a1a1a; letter-spacing: -0.5px; }
-        .header-section p { font-size: 18px; color: #666; margin: 8px 0 4px 0; font-weight: 500; }
-        
-        .author-link { 
-            font-size: 14px; 
-            color: #007AFF; 
-            text-decoration: none; 
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            transition: opacity 0.2s;
-        }
-        .author-link:hover { opacity: 0.7; text-decoration: underline; }
+
+
+
+        /* Container for the entire header */
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+/* Container for the image itself */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px; /* Space between logo and name */
+}
+
+/* Image scaling rules */
+.app-logo {
+    /* Mobile-first: stays within screen bounds */
+    max-width: 80%; 
+    height: auto;
+    display: block;
+}
+
+/* Desktop optimization */
+@media (min-width: 768px) {
+    .app-logo {
+        max-width: 350px; /* Adjust this value based on your logo's design */
+    }
+}
+
+/* Ensure the author link is centered and easy to tap */
+.author-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    font-size: var(--font-ui);
+    color: #007AFF; /* Or your preferred link color */
+}
 
         /* ============================================================
    3. THE GRID SYSTEM & BOARD STRUCTURE
