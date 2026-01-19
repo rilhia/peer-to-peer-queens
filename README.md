@@ -1,71 +1,88 @@
-![Alt text for the image](images/QueensWithFriendsLogo.png)
+![Main Header Logo](images/QueensWithFriendsLogo.png)
+
 # Queens With Friends ♛
-> **Play, challenge, and learn with friends.**
+> **Play, challenge, and learn logic with friends.**
 
-**Queens With Friends** is an open-source logic puzzle engine. It was built as a response to the "leaderboard culture" of the puzzle on LinkedIn, where faked solve times and scripts often overshadow genuine skill. 
-
-This platform returns the game to its roots: a private, honest, and transparent environment for true logic enthusiasts to sharpen their minds and challenge their peers.
+**Queens With Friends** is an open-source logic puzzle engine. Unlike competitive leaderboards that can be manipulated by scripts, this platform is a transparent environment for true enthusiasts to sharpen their minds, build their own challenges, and learn the deep logic behind every move.
 
 ---
 
-## 🛡️ The Mission
-The inspiration for this project came from observing the competitive "Queens" puzzles on LinkedIn. I noticed that instead of fostering a community of learners, the focus often shifted to displaying impossible solve times.
+## 🏁 Quick Start: I Just Want to Play!
+When you first load the game, a puzzle is already waiting for you on the **Play** tab.
 
-**Queens With Friends** solves this by:
-1. **Eliminating the Central Leaderboard:** Competition happens between friends via direct challenge links.
-2. **Exposing the Logic:** A built-in "Solver" which takes you through how to solve boards.
-3. **Encouraging Creation:** Allowing users to architect their own challenges and validate them mathematically. 
+1.  **Start the Game:** Press the "Start Game" button. A 3-2-1 countdown will begin to get you ready.
+2.  **Marking Blocks (•):** Touch a cell once to mark it as blocked. You can also swipe your finger across several cells to block them all at once.
+3.  **Setting a Queen (♛):** Double-tap a cell to place a queen.
+4.  **Removing Pieces:** To unblock a cell or remove a queen, simply touch it again.
+5.  **Tracking Progress:** Every move you make is recorded in the activity log below the board.
+
+> ⚠️ **Important:** If you leave the **Play** tab to look at other sections during a game, the board will reset. Make sure to finish your solve before switching tabs!
 
 ---
 
 ## 🎮 The Rules
-The goal is to place exactly **N** queens on an **N x N** grid. To reach a valid solution, you must satisfy four constraints:
-1. **Row:** Exactly one queen per row.
-2. **Column:** Exactly one queen per column.
-3. **Region:** Exactly one queen per color-coded region.
-4. **Adjacency:** No two queens can touch, even diagonally.
+The goal is to place exactly **one queen** in every row, every column, and every color region. To win, you must satisfy four constraints:
+
+1.  **Row:** Exactly one queen per row.
+2.  **Column:** Exactly one queen per column.
+3.  **Region:** Exactly one queen per color-coded region.
+4.  **Adjacency:** Queens cannot touch each other, not even diagonally.
 
 ---
 
-## 🚀 Key Features
+## 🛠️ The Build Tab: Customize Your Challenge
+The **Build** tab is the heart of the engine. Here you can load pre-made boards, generate random puzzles, or architect your own.
 
-### 1. The Play Tab 
-* **Precision Timing:** A 3-2-1 countdown starts after you have pressed the "Start" button.
-* **Controls:** Touch cells to set them to blocked or unblock them. Queens are set with a double tap. There is a "Back" button to undo a move and a "Reset" button if you want to start again.
-* **State Integrity:** A full undo-stack and real-time conflict detection.
+### 1. Loading Pre-Made Levels
+We have included a library of curated boards that are guaranteed to have a unique solution.
+* Select your **Size** (from 5x5 up to 10x10).
+* Select your **Difficulty** (Easy, Medium, Hard, or Super Hard).
+* Choose a board from the **Load Board** dropdown.
+* Once selected, click the **Apply to Tabs** button to send it to the Play and Solve tabs.
 
-### 2. The Build Tab 
-* **Greedy Snakes Algorithm:** A custom procedural generator that grows organic, connected color regions from high-dispersion seeds. Note: For smaller boards this performs quicker. Larger boards at higher complexity levels can take a while to generate.
-* **Manual Design:** A "paint" tool to architect your own puzzles or modify generated puzzles. Maybe recreate a model you have seen elsewhere.
-* **Logic Validator:** An internal solve-engine that audits your custom designs for connectivity and solution uniqueness before you share them.
+### 2. Generating Random Puzzles
+* Select your desired size and difficulty, then click **Generate Random**.
+* **Small boards (5x5):** These generate in just a few seconds.
+* **Large boards (10x10):** High-difficulty large boards are mathematically complex and can take several minutes to compute.
+* **Verification:** Once a board is found, you must click **Test Build** to verify it. Once you see the success message, click **Apply to Tabs**.
 
-### 3. The Solve Tab 
-* **Heuristic Deduction:** Uses human-like strategies (Super-Intersections, Mutual Exclusion, and Contradiction Chaining).
-* **Reasoning Log:** A step-by-step log of how the puzzle is solved with graphics on the board to guide you as well.
+### 3. Manual Design (Painting Your Own)
+* Flip the **Manual Edit** switch to see the color palette appear.
+* Pick a color and tap cells on the board to "paint" custom regions.
+* **Test Your Architecture:** Click **Test Build** to see if your design is valid. 
+* **Show Solutions:** Tick the "Show Solutions" box before clicking **Test Build**. The engine will show you exactly where queens can be placed on your custom layout—this is incredibly helpful for adjusting your design!
 
-### 4. Zero-Server Sharing (P2P)
-* No databases, no accounts, no tracking. 
-* **Queens With Friends** uses **Base64 URL Encoding** to store the entire board state within the link. Simply click "Share," send the URL to a friend, and they are playing your specific board instantly.
+---
+
+## ✉️ Sharing Challenges
+Once you have a verified board, you can challenge your friends:
+
+* **The Share Button:** On mobile, this opens your device's sharing options. On desktop, it copies a unique URL to your clipboard. This link contains the entire board state—your friend just clicks it and starts playing.
+* **Manual Text Import:** Below the buttons is a text area containing the board code (e.g., `[[0,0...]]`). You can copy this text manually. To load it, your friend simply pastes it into their text box and hits **Test Build**.
+
+---
+
+## 💡 The Solve Tab: Learn the Logic
+The **Solve** tab is designed to teach you *how* to think. 
+
+1.  Apply a board from the Build tab.
+2.  Click **Next Step** to watch the engine solve the puzzle one move at a time.
+3.  **The Reasoning Log:** Every move includes a detailed explanation of the logic used (such as **Super-Intersections**, **Mutual Exclusion**, or **Contradiction Chaining**).
+4.  Use this tab on harder boards to learn advanced techniques that you can then apply to your own manual solves.
+
+---
+
+## 🛡️ The Mission
+This project returns "Queens" to its roots as a pure logic exercise.
+1.  **P2P Challenges:** Competition happens between friends via direct links, not an anonymous leaderboard.
+2.  **Educational Focus:** The built-in solver exposes the "why" behind every deduction.
+3.  **Creative Freedom:** Users are encouraged to build and validate their own puzzles to share.
 
 ---
 
 ## 🛠️ Technical Implementation
-* **Architecture:** Single-file JS/HTML/CSS (Zero dependencies). 
-* **Graphics:** Dynamic CSS for rendering across mobile and desktop.
+* **Greedy Snakes Algorithm:** A custom procedural generator for organic region growth.
+* **Heuristic Deduction Engine:** A multi-layered solver that mimics human logic patterns.
+* **Zero-Server P2P:** Entire board states are stored in **Base64 URL Encoding**, requiring no databases or accounts.
 
----
-
-## 📖 How to Use
-
-1. **To Play:** Open the game and click "Start." Single tap to block a cell (•), double tap to place a queen (♛).
-2. **To Build:** Go to the **Build** tab. Generate a random board or paint your own. Test it with the **Test Build** button. To play it, click the **Apply To Tabs** button, then go to the **Play** tab. To share it, click the **Share** button and send the puzzle to a friend.
-3. **To Learn:** If you get stuck, go to the **Solve** tab. Click **Next Step** to see the logical deduction required to progress.
-
----
-
-## 📜 License
-This project is open-source and available under the **MIT License**.
-
----
-
-**Built by [Richard Hall](https://www.linkedin.com/in/rilhia/)** 
+**Built by [Richard Hall](https://www.linkedin.com/in/rilhia/)** | **[MIT License](https://opensource.org/licenses/MIT)**
