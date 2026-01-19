@@ -8,6 +8,7 @@
 ---
 
 ## 🏁 Quick Start: I Just Want to Play!
+<img src="images/screenshot1.png" width="300">
 When you first load the game, a puzzle is already waiting for you on the **Play** tab.
 
 1.  **Start the Game:** Press the "Start Game" button. A 3-2-1 countdown will begin to get you ready.
@@ -21,6 +22,7 @@ When you first load the game, a puzzle is already waiting for you on the **Play*
 ---
 
 ## 🎮 The Rules
+<img src="images/screenshot2.png" width="300">
 The goal is to place exactly **one queen** in every row, every column, and every color region. To win, you must satisfy four constraints:
 
 1.  **Row:** Exactly one queen per row.
@@ -34,6 +36,7 @@ The goal is to place exactly **one queen** in every row, every column, and every
 The **Build** tab is the heart of the engine. Here you can load pre-made boards, generate random puzzles, or architect your own.
 
 ### 1. Loading Pre-Made Levels
+<img src="images/screenshot3.png" width="300">
 We have included a library of curated boards that are guaranteed to have a unique solution.
 * Select your **Size** (from 5x5 up to 10x10).
 * Select your **Difficulty** (Easy, Medium, Hard, or Super Hard).
@@ -47,6 +50,7 @@ We have included a library of curated boards that are guaranteed to have a uniqu
 * **Verification:** Once a board is found, you must click **Test Build** to verify it. Once you see the success message, click **Apply to Tabs**.
 
 ### 3. Manual Design (Painting Your Own)
+<img src="images/screenshot4.png" width="300">
 * Flip the **Manual Edit** switch to see the color palette appear.
 * Pick a color and tap cells on the board to "paint" custom regions.
 * **Test Your Architecture:** Click **Test Build** to see if your design is valid. 
@@ -63,6 +67,7 @@ Once you have a verified board, you can challenge your friends:
 ---
 
 ## 💡 The Solve Tab: Learn the Logic
+<img src="images/screenshot5.png" width="300">
 The **Solve** tab is designed to teach you *how* to think. 
 
 1.  Apply a board from the Build tab.
