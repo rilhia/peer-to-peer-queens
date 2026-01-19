@@ -1,9 +1,9 @@
 ![Main Header Logo](images/QueensWithFriendsLogo.png)
 
 # Queens With Friends ♛
-> **Play, challenge, and learn logic with friends.**
+> **Play, challenge, and learn with friends.**
 
-**Queens With Friends** is an open-source logic puzzle engine. Unlike competitive leaderboards that can be manipulated by scripts, this platform is a transparent environment for enthusiasts to sharpen their minds, build their own challenges, and learn the deep logic behind every move.
+**Queens With Friends** is an open-source logic puzzle game. Unlike some versions where competitive leaderboards are tainted by less than honest practices, this platform is a transparent environment for enthusiasts to sharpen their minds, build their own challenges, and learn the logic behind every move. You can play here without being made to feel inferior, you can compete if you choose, you can do it your way.
 
 ---
 
@@ -35,7 +35,7 @@ When you first load the game, a puzzle is already waiting for you on the **Play*
 4.  **Removing Pieces:** To unblock or remove a queen, simply touch it again.
 5.  **Tracking Progress:** Moves are recorded in the activity log below the board.
 
-> ⚠️ **Important:** If you leave the **Play** tab during a game, the board will reset. Finish your solve before switching tabs!
+> ⚠️ **Important:** If you leave the **Play** tab during a game, the board will reset. Finish your board before switching tabs!
 
 ---
 
@@ -63,7 +63,7 @@ The **Build** tab allows you to load pre-made boards, generate random puzzles, o
 
 ### 2. Generating Random Puzzles
 * Select settings and click **Generate Random**. 
-* *Note:* 10x10 "Super Hard" boards are complex and may take a moment to compute.
+* *Note:* 10x10 "Super Hard" boards are complex and may take a while to compute.
 * Click **Test Build** to verify, then **Apply to Tabs**.
 
 ### 3. Manual Design (Painting Your Own)
@@ -78,7 +78,7 @@ The **Build** tab allows you to load pre-made boards, generate random puzzles, o
 ## ✉️ Sharing Challenges
 Once you have a verified board, challenge your friends:
 
-* **The Share Button:** On mobile, opens your sharing options. On desktop, copies a unique URL to your clipboard. The link contains the entire board state!
+* **The Share Button:** On mobile, opens your sharing options. On desktop, copies a unique URL to your clipboard. The link contains the entire board as a parameter!
 * **Manual Text Import:** Copy the code block (e.g., `[[0,0...]]`) and send it to a friend to paste into their own Build tab.
 
 ---
