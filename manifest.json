@@ -1,0 +1,24 @@
+{
+  "name": "Queens With Friends",
+  "short_name": "Queens",
+  "description": "A logic puzzle game where you place queens in color regions.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#B497D6",
+  "icons": [
+    {
+      "src": "images/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
